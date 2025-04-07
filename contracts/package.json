@@ -1,0 +1,34 @@
+{
+  "name": "token-fetcher-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for TokenFetcher with fetchToken function",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "deploy:local": "hardhat run scripts/deploy-token-fetcher.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy-token-fetcher.js --network sepolia",
+    "deploy:devnet": "hardhat run scripts/deploy-token-fetcher.js --network devnet",
+    "deploy:test-token:local": "hardhat run scripts/deploy-test-token.js --network localhost",
+    "deploy:test-token:sepolia": "hardhat run scripts/deploy-test-token.js --network sepolia",
+    "deploy:test-token:devnet": "hardhat run scripts/deploy-test-token.js --network devnet",
+    "approve-token": "hardhat run scripts/approve-test-token.js",
+    "fetch-token": "hardhat run scripts/fetch-token-info.js"
+  },
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "hardhat",
+    "erc20",
+    "token-fetcher"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.22.19",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
